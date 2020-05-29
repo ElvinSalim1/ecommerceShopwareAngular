@@ -1,0 +1,18 @@
+<div class="row row-col-3 row-cols-md-1 mt-3 m-2 justify-content-center">
+  <div class="card m-3 container"> 
+    <div class="view overlay">
+      <img src="{{product.image}}" class="img-fluid" alt="" />
+      <a [routerLink]="'/products/' + product._id"><div class="mask rgba-white-slight"></div></a> 
+    </div>
+    <span class="float-left mt-2 red-text text-center"><strong>{{product.price}} SEK</strong></span>
+    <div class="card-body">
+      <h5 class="card-title mb-1 text-center"><strong>{{product.name}}</strong></h5>
+      <br/>
+      <p class="card-text">{{product.shortDescription}}</p>
+      <div class="text-center">
+        <a [routerLink]="'/products/' + product._id"><button (click)="product.id" type="button" class="btn btn-sm btn-primary">Visa Produkt</button></a> 
+    
+      </div>
+    </div>     
+  </div>
+</div>
